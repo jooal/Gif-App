@@ -12,10 +12,6 @@
 </head>
 <body>
 
-<!-- <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>My First Bootstrap 4 Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div> -->
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <a class="navbar-brand" href="#">Gif Searcher</a>
@@ -26,33 +22,37 @@
         <a class="active" id="reset" href="#">Reset</a> 
     <div class="search-container">
         <form action="/action_page.php">
-          <input id="search-area" class= "search-bar ml-auto " type="text" placeholder="Search.." name="search">
-          <button id="search-button" type="submit"><i class="fa fa-search">Go</i></button>
+          <input id="search-input" class= "search-bar ml-auto " type="text" placeholder="Search.." name="search">
+          <button id="submit-button" type="submit"><i class="fa fa-search">Go</i></button>
         </form>
       </div>
   </div>  
 </nav>
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-     <div class="col-sm-8">
+
+     <div id="buttons-go-here">
         <button class="btn-primary" id="search-topics" data-search="Dogs">Dogs</button>
         <button class="btn-primary" id="search-topics" data-search="Relaxing">Relaxing</button>
         <button class="btn-primary" id="search-topics" data-search="Hungry">Hungry</button>
         <button class="btn-primary" id="search-topics" data-search="Drunk">Drunk</button>
             <div id="new-buttons"></div>
-        <p id="ratings">Rating:</p>
-        <img id="gif-area" src="#">
+            <br>
     </div>
-    <div class="col-sm-4">
-        <p></p>
+ 
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10">
+        <div id="gifs-go-here">
+
+          </div>
     </div>
   </div>
 </div>
 
-<div class="jumbotron text-center" id="footer" style="margin-bottom:0">
-  <p>Footer</p>
-</div>
+
+
 
 </body>
 <script src="./assets/javascript/gif-java.js"></script>
