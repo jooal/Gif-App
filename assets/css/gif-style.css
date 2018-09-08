@@ -33,13 +33,7 @@
   }
 }
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    height: 60px;
-}
+
 
 #reset {
     padding: 5px;
@@ -49,4 +43,10 @@
   margin:5px;
   
   
+}
+
+.btn-primary {
+
+  margin: 5px;
+
 }
