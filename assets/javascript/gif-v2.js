@@ -45,7 +45,7 @@ $(document).on("click", ".btn-primary", displayGifs);
 
 $("#submit-button").on("click", function(event) {
    
-   
+   $("#new-buttons").empty();
     event.preventDefault();
     var newTopic = $("#search-input").val().trim();
     if (!topics.includes(newTopic)) {
@@ -87,9 +87,12 @@ function animateGif() {
 $(document).on("click", "#images", animateGif);
 
 
-});
+
 
 $("#reset").on("click", function() {
-    $("#new-buttons").empty();
-    $("#gifs-go-here").empty();
+$("#new-buttons").empty();
+$("#gifs-go-here").empty();
+topics=[];
 })
+
+});
